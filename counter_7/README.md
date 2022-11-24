@@ -1,3 +1,40 @@
+# Tugas 9
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Bisa saja tanpa membuat model terlebih dahulu, namun model diperlukan dalam melakukan get http response guna kemudahan developer untuk mengakses, mengolah dan mengoperasikan data yang ada.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+### TextStyle: berfungsi untuk memberikan styling pada text
+
+### Text: untuk menampilkan text pada aplikasi yang dibuat
+
+###  Column: berfungsi untuk mengatur posisi letak widget
+
+### Center: untuk meletakkan widget ke bagian tengah
+
+### ListView.builder : berfungsi untuk menampilkan list of children yang dapat di scroll
+
+### SizedBox : berfungsi untuk membuat box sehingga juga digunakan untuk menambah jarak
+
+###  Container : berfungsi sebagai pembungkus widget lainnya
+
+### FutureBuilder : berfungsi untuk fetching data
+
+## Mekanisme pengambilan data dari json ke Flutter
+
+## Menambahkan dependensi http terlebih dahulu
+
+## Membuat function http request dengan method GET secara async
+
+## Membuat model sesuai dengan data yang ingin diambil
+
+## Melakukan HTTP request dengan method GET dan secara otomatis akan di convert sesuai format model yang telah dibuat
+
+## Menampilkan data menggunakan FutureBuilder
+
+
 # Tugas 8
 
 ## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
