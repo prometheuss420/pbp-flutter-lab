@@ -1,3 +1,4 @@
+import 'package:counter_7/mywatchlistpage.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
 import 'package:counter_7/data_budget.dart';
@@ -39,18 +40,28 @@ class _MyFormPageState extends State<MyFormPage> {
                     );
                   },
                 ),
-                ListTile(
-                  title: const Text('Tambah Budget'),
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                ),
-                ListTile(
+               ListTile(
+              title: const Text('Tambah Budget'),
+              onTap: () {
+                // Route menu ke halaman form
+               Navigator.pop(context);
+              },
+            ),
+            ListTile(
                   title: const Text('Data Budget'),
                   onTap: () {
                     Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => const MyDataPage()),
+                );
+                  },
+                ),
+            ListTile(
+                  title: const Text('MyWatchList'),
+                  onTap: () {
+                    Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyWatchListPage()),
                 );
                   },
                 ),

@@ -1,3 +1,4 @@
+import 'package:counter_7/mywatchlistpage.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/form.dart';
 import 'package:counter_7/main.dart';
@@ -40,10 +41,19 @@ class _MyDataPageState extends State<MyDataPage> {
                 );
               },
             ),
-                ListTile(
+            ListTile(
                   title: const Text('Data Budget'),
                   onTap: () {
-                    Navigator.pop(context);
+                  Navigator.pop(context);
+                  },
+                ),
+            ListTile(
+                  title: const Text('MyWatchList'),
+                  onTap: () {
+                    Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyWatchListPage()),
+                );
                   },
                 ),
               ],
